@@ -12,6 +12,10 @@ export function CookieBanner() {
     if (!consent) {
       setIsVisible(true)
     }
+
+    const handleShowBanner = () => setIsVisible(true)
+    window.addEventListener("show-cookie-banner", handleShowBanner)
+    return () => window.removeEventListener("show-cookie-banner", handleShowBanner)
   }, [])
 
   const acceptCookies = () => {

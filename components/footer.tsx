@@ -100,6 +100,14 @@ export function Footer() {
                   Termos
                 </a>
               </li>
+              <li>
+                <button
+                  onClick={() => window.dispatchEvent(new CustomEvent("show-cookie-banner"))}
+                  className="text-sm text-muted-foreground transition-colors hover:text-foreground text-left w-full"
+                >
+                  Gerenciar Cookies
+                </button>
+              </li>
             </ul>
           </div>
         </div>

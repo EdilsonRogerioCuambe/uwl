@@ -1,0 +1,65 @@
+@import url('https://db.onlinewebfonts.com/c/2c79a1cc652e0fa6a1f10b9b25becdff?family=Pirou');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .text-pretty {
+    text-wrap: pretty;
+  }
+}
+
+@layer base {
+  :root {
+    --background: 40 33% 97%;
+    --foreground: 14 60% 10%;
+    --card: 40 30% 99%;
+    --card-foreground: 14 60% 10%;
+    --popover: 40 30% 99%;
+    --popover-foreground: 14 60% 10%;
+    --primary: 14 60% 21%;
+    --primary-foreground: 40 33% 97%;
+    --secondary: 35 20% 92%;
+    --secondary-foreground: 14 60% 15%;
+    --muted: 35 15% 93%;
+    --muted-foreground: 14 10% 46%;
+    --accent: 36 60% 50%;
+    --accent-foreground: 14 60% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 35 18% 88%;
+    --input: 35 18% 88%;
+    --ring: 14 60% 21%;
+    --chart-1: 14 76% 41%;
+    --chart-2: 36 58% 49%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.375rem;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground overflow-x-hidden;
+  }
+}
+
+.font-pirou {
+  font-family: 'Pirou', Georgia, serif;
+}
